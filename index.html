@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030712">
+  <meta name="description" content="Portfolio professionnel de Tiavina RJ Nomenjanahary - Développeur Web & Concepteur de Solutions IT à Madagascar.">
+  <meta name="keywords" content="Tiavina Développeur Web, Fullstack, Frontend, UI/UX, Javascript, React, Python, Madagascar">
+  <meta name="author" content="Tiavina RJ Nomenjanahary">
+  
+  <title>🔥Tiavina RJ Nomenjanahary — Développeur Web & Solutions Digitales🔥</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="icon" type="image/png" href="assets/Logo Maint-Dev Pro2.jfif">
+</head>
+<body>
+  <!-- Background Glow & Mesh Effect -->
+  <div class="bg-glow">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#accueil">
+        <span class="brand-avatar">T</span>
+        <span class="brand-text">Tiavina<span class="dot">.</span>dev</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#accueil" class="nav-link active">Accueil</a>
+        <a href="#apropos" class="nav-link">À propos</a>
+        <a href="#competences" class="nav-link">Compétences</a>
+        <a href="#projets" class="nav-link">Projets</a>
+        <a href="#tarifs" class="nav-link">Offres</a>
+        <a href="#contact" class="nav-btn-mobile">Me contacter</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn-glow" href="#contact">
+          <span>Discuter d'un projet</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu Toggle">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-dot"></span>
+            <span>Disponible pour opportunités & projets</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Concepteur de <span class="gradient-text">solutions web</span> modernes & sur-mesure.
+          </h1>
+
+          <p class="hero-subtitle">
+            Je suis <strong>Tiavina RJ Nomenjanahary</strong>, développeur basé à Madagascar. J'accompagne les entreprises et indépendants dans la création de sites web haute performance et d'applications métier intuitives.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projets" class="btn-primary">
+              <span>Explorer mes travaux</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>Obtenir un devis</span>
+            </a>
+          </div>
+
+          <div class="hero-tech-stack">
+            <span class="stack-label">Technologies maîtrisées :</span>
+            <div class="stack-badges">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript ES6+</span>
+              <span>Node / Python</span>
+              <span>UI/UX Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glass-card main-card">
+            <div class="card-header">
+               <span class="card-title">developer_profile.json</span>
+            </div>
+            <div class="card-code">
+              <pre><code><span class="k">const</span> <span class="n">developer</span> = {
+  <span class="p">name:</span> <span class="s">'Tiavina RJ'</span>,
+  <span class="p">location:</span> <span class="s">'Madagascar 🇲🇬'</span>,
+  <span class="p">specialties:</span> [<span class="s">'Fullstack Web'</span>, <span class="s">'App Offline'</span>],
+  <span class="p">commitment:</span> <span class="s">'Clean Code & Performance'</span>,
+  <span class="p">status:</span> <span class="s">'Ready to build'</span>
+};</code></pre>
+            </div>
+          </div>
+
+          <div class="glass-card floating-metric metric-1">
+            <div class="metric-icon">⚡</div>
+            <div>
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Responsive & Rapide</span>
+            </div>
+          </div>
+
+          <div class="glass-card floating-metric metric-2">
+            <div class="metric-icon">🛡️</div>
+            <div>
+              <span class="metric-value">Offline-First</span>
+              <span class="metric-label">Gestion de données locale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats-section">
+      <div class="container stats-flex">
+        <div class="stat-item">
+          <span class="stat-num">03+</span>
+          <span class="stat-text">Années de pratique</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-text">Code personnalisé</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">24/7</span>
+          <span class="stat-text">Applications fiables</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (BENTO STYLE) -->
+    <section class="section container" id="apropos">
+      <div class="section-header">
+        <span class="section-kicker">PROFIL</span>
+        <h2>Une vision moderne du <span class="gradient-text">développement web.</span></h2>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card profile-card">
+          <div class="profile-image-container">
+            <img src="profile.jpg" alt="Tiavina RJ Nomenjanahary" class="profile-img">
+            <div class="profile-overlay"></div>
+          </div>
+          <div class="profile-info">
+            <h3>Tiavina RJ Nomenjanahary</h3>
+            <p>Développeur Web & Concepteur d'applications</p>
+          </div>
+        </div>
+
+        <div class="bento-card bento-wide">
+          <div class="bento-icon">🎯</div>
+          <h3>Approche centrée sur le résultat</h3>
+          <p>
+            Chaque projet est conçu avec une attention particulière apportée à la performance, à la lisibilité du code et à l'ergonomie. Mon objectif principal est de transformer un besoin complexe en une interface simple et élégante.
+          </p>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon">🚀</div>
+          <h3>Performance & SEO</h3>
+          <p>Sites optimisés dès le premier jour pour un chargement instantané et une visibilité maximale sur les moteurs de recherche.</p>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon">💡</div>
+          <h3>Applications Métier</h3>
+          <p>Conception d'outils hors-ligne (Offline-First) permettant de gérer vos clients ou vos équipes sans dépendre d'Internet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section bg-surface" id="competences">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">EXPERTISE</span>
+          <h2>Compétences & <span class="gradient-text">stack technique.</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-icon-box">💻</span>
+              <h3>Front-End Engineering</h3>
+            </div>
+            <p>Interfaces interactives, fluides et élégantes adaptées à tous les écrans.</p>
+            <div class="tag-cloud">
+              <span>HTML5 / Semantic</span>
+              <span>CSS3 / SCSS</span>
+              <span>JavaScript ES6+</span>
+              <span>Responsive UI</span>
+              <span>Tailwind / Flexbox</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-icon-box">⚡</span>
+              <h3>Applications & Web Apps</h3>
+            </div>
+            <p>Développement de logiques métier avancées et d'applications autonomes.</p>
+            <div class="tag-cloud">
+              <span>LocalStorage / IndexedDB</span>
+              <span>PWA / Offline First</span>
+              <span>APIs Rest</span>
+              <span>DOM Manipulation</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-icon-box">🛠️</span>
+              <h3>Outils & Environnement IT</h3>
+            </div>
+            <p>Méthodes de travail structurées et accompagnement technique complet.</p>
+            <div class="tag-cloud">
+              <span>Git / GitHub</span>
+              <span>VS Code</span>
+              <span>Windows Administration</span>
+              <span>Maintenance IT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section container" id="projets">
+      <div class="section-header header-flex">
+        <div>
+          <span class="section-kicker">PORTFOLIO</span>
+          <h2>Projets & <span class="gradient-text">réalisations récentes.</span></h2>
+        </div>
+        
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="app">Applications</button>
+          <button class="filter-btn" data-filter="web">Sites Web</button>
+        </div>
+      </div>
+
+      <div class="projects-masonry">
+        <!-- Project Card 1 -->
+        <article class="project-card" data-category="app">
+          <div class="project-thumb">
+            <img src="assets/gestion-client-dashboard.png" alt="Aperçu Gestion de Client Pro">
+            <div class="project-overlay">
+              <span class="project-category">App Métier / ERP</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Gestion de Client Pro</h3>
+            <p>Application de gestion d'entreprise hors-ligne avec émission de reçus, statistiques de chiffre d'affaires et historique d'opérations.</p>
+            <div class="project-tags">
+              <span>JS Vanilla</span><span>IndexedDB</span><span>Dashboard</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card" data-category="app">
+          <div class="project-thumb">
+            <img src="assets/pointage-employes.png" alt="Aperçu Pointage Pro">
+            <div class="project-overlay">
+              <span class="project-category">Outil RH & Badges</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>POINTAGE PRO</h3>
+            <p>Système complet de gestion de présence des employés, génération de badges avec QR Code et exports d'historiques.</p>
+            <div class="project-tags">
+              <span>QR Code</span><span>System RH</span><span>Offline App</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card" data-category="web">
+          <div class="project-thumb project-thumb-code">
+            <div class="browser-mockup">
+              <div class="bar"><i></i><i></i><i></i></div>
+              <div class="content-preview">
+                <span class="p-title">Portfolio Developer UI</span>
+                <span class="p-desc">Performance 100/100 Lighthouse</span>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">Design Web</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Portfolio Professionnel V2</h3>
+            <p>Site vitrine ultra-moderne conçu avec glassmorphism, grille Bento et animations fluides sans dépendances lourdes.</p>
+            <div class="project-tags">
+              <span>UX/UI</span><span>CSS Grid</span><span>Performance</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING / OFFERS SECTION -->
+    <section class="section bg-surface" id="tarifs">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">TARIFICATION</span>
+          <h2>Formules & <span class="gradient-text">investissements.</span></h2>
+          <p class="section-lead">Des tarifs clairs, sans frais cachés, adaptés à vos objectifs.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Card 1 -->
+          <div class="price-card">
+            <div class="price-badge">Starter</div>
+            <h3>Site Vitrine Essentiel</h3>
+            <p class="price-desc">Idéal pour lancer votre activité avec une présence web professionnelle.</p>
+            <div class="price-val">
+              <span class="val">150 000 Ar</span>
+              <span class="curr">/ projet (~35€)</span>
+            </div>
+            <ul class="price-features">
+              <li>✓ Single Page (Landing page) responsive</li>
+              <li>✓ Design moderne & épuré</li>
+              <li>✓ Formulaire de contact direct</li>
+              <li>✓ Optimisation SEO de base</li>
+              <li>✓ Livraison rapide en 3 à 5 jours</li>
+            </ul>
+            <a href="#contact" class="btn-outline">Choisir ce pack</a>
+          </div>
+
+          <!-- Card 2 (Featured) -->
+          <div class="price-card featured">
+            <div class="featured-ribbon">Recommandé 🔥</div>
+            <div class="price-badge badge-pro">Professionnel</div>
+            <h3>Site Multi-Pages Pro</h3>
+            <p class="price-desc">Une vitrine complète pour présenter vos services et capter plus de clients.</p>
+            <div class="price-val">
+              <span class="val">350 000 Ar</span>
+              <span class="curr">/ projet (~80€)</span>
+            </div>
+            <ul class="price-features">
+              <li>✓ Jusqu'à 5 pages sur-mesure</li>
+              <li>✓ Animations & design haut de gamme</li>
+              <li>✓ Intégration WhatsApp & formulaires</li>
+              <li>✓ Vitesse de chargement optimale</li>
+              <li>✓ Support & ajustements 30 jours</li>
+            </ul>
+            <a href="#contact" class="btn-primary">Lancer mon projet</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="price-card">
+            <div class="price-badge">Sur-Mesure</div>
+            <h3>Application & IT</h3>
+            <p class="price-desc">Pour les besoins spécifiques : outils internes, gestion locale ou assistance.</p>
+            <div class="price-val">
+              <span class="val">Sur Devis</span>
+              <span class="curr">/ projet</span>
+            </div>
+            <ul class="price-features">
+              <li>✓ Application Web métier (Offline/Online)</li>
+              <li>✓ Module de gestion de données</li>
+              <li>✓ Interface personnalisée selon vos workflows</li>
+              <li>✓ Dépannage & maintenance informatique</li>
+              <li>✓ Formation & suivi dédié</li>
+            </ul>
+            <a href="#contact" class="btn-outline">Demander un devis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section container" id="contact">
+      <div class="contact-card">
+        <div class="contact-info">
+          <span class="section-kicker">CONTACT</span>
+          <h2>Prêt à concrétiser <br><span class="gradient-text">votre projet ?</span></h2>
+          <p>N'hésitez pas à me contacter. Nous pourrons échanger directement sur vos besoins et trouver la solution adaptée.</p>
+
+          <div class="contact-methods">
+            <a href="mailto:Tiavinarjnomenjanahary@gmail.com" class="method-item">
+              <div class="method-icon">✉️</div>
+              <div>
+                <span class="method-title">Email Direct</span>
+                <span class="method-val">Tiavinarjnomenjanahary@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/261349547203" target="_blank" rel="noreferrer" class="method-item">
+              <div class="method-icon">💬</div>
+              <div>
+                <span class="method-title">WhatsApp</span>
+                <span class="method-val">+261 34 95 472 03</span>
+              </div>
+            </a>
+
+            <a href="https://www.fiverr.com/tiavinadevpro" target="_blank" rel="noreferrer" class="method-item">
+              <div class="method-icon">🌐</div>
+              <div>
+                <span class="method-title">Fiverr Profile</span>
+                <span class="method-val">@tiavinadevpro</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Envoyer un message</h3>
+          
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" required placeholder="Ex: Jean Dupont">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse Email</label>
+            <input type="email" id="email" required placeholder="jean@exemple.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Type de projet</label>
+            <select id="subject">
+              <option>Création de site web</option>
+              <option>Refonte / Amélioration de site</option>
+              <option>Application métier sur-mesure</option>
+              <option>Autre demande IT</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required placeholder="Décrivez brièvement vos attentes..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-block">
+            <span>Envoyer le message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-text">Tiavina<span class="dot">.dev</span></span>
+        <p>© <span id="year"></span> Tiavina RJ Nomenjanahary. Tous droits réservés.</p>
+      </div>
+
+      <a href="#accueil" class="back-top-btn" aria-label="Retour en haut">
+        <span>Remonter</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
